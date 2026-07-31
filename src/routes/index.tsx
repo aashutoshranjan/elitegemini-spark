@@ -175,7 +175,7 @@ function Home() {
                   boxShadow: "0 10px 30px -12px color-mix(in oklab, var(--emerald) 70%, transparent)",
                 }}
               >
-                <e.icon className="size-6 text-white" />
+                <e.icon className="size-6" style={{ color: "oklch(0.99 0 0)" }} />
               </span>
 
               <h3 className="mt-5 text-lg font-bold">{e.title}</h3>
