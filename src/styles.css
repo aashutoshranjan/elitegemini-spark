@@ -133,12 +133,8 @@
   }
 
   .dark body {
-    background-image: radial-gradient(
-        70rem 40rem at 10% -10%,
-        oklch(0.55 0.29 300 / 18%),
-        transparent 60%
-      ),
-      radial-gradient(60rem 36rem at 95% 5%, oklch(0.86 0.14 197 / 12%), transparent 60%);
+    background-image: radial-gradient(70rem 40rem at 10% -10%, #1a49a838, transparent 60%),
+      radial-gradient(60rem 36rem at 95% 5%, #2d9c6824, transparent 60%);
     background-attachment: fixed;
   }
 
@@ -149,6 +145,28 @@
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
+
+  h1,
+  h2 {
+    color: var(--heading);
+  }
+
+  h3,
+  h4 {
+    color: var(--subheading);
+  }
+
+  a:hover {
+    text-decoration-color: var(--aqua);
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--aqua);
+    outline-color: var(--aqua);
+  }
+
 }
 
 @utility glass {
