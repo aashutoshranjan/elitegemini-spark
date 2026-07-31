@@ -266,7 +266,7 @@ function CaseStudies() {
                   key={m.label}
                   className="rounded-2xl border border-glass-border bg-glass p-5 text-center"
                 >
-                  <div className="text-2xl font-extrabold text-gradient">{m.value}</div>
+                  <div className="text-2xl font-extrabold" style={{ color: "var(--aqua)" }}>{m.value}</div>
                   <div className="mt-1 text-xs text-muted-foreground">{m.label}</div>
                 </div>
               ))}
