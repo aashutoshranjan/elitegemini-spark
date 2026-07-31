@@ -170,10 +170,14 @@ function Home() {
             <GlassCard key={e.title} className="p-7">
               <span
                 className="grid size-12 place-items-center rounded-2xl"
-                style={{ background: "var(--gradient-brand)" }}
+                style={{
+                  background: "color-mix(in oklab, var(--emerald) 88%, transparent)",
+                  boxShadow: "0 10px 30px -12px color-mix(in oklab, var(--emerald) 70%, transparent)",
+                }}
               >
-                <e.icon className="size-6 text-primary-foreground" />
+                <e.icon className="size-6 text-white" />
               </span>
+
               <h3 className="mt-5 text-lg font-bold">{e.title}</h3>
               <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{e.body}</p>
             </GlassCard>
