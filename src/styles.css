@@ -133,11 +133,19 @@
       color 400ms ease;
   }
 
+  body {
+    background-image: radial-gradient(70rem 40rem at 8% -12%, #4da5e92e, transparent 62%),
+      radial-gradient(58rem 34rem at 96% 2%, #2d9c6824, transparent 62%),
+      radial-gradient(50rem 30rem at 50% 110%, #1a49a81f, transparent 65%);
+    background-attachment: fixed;
+  }
+
   .dark body {
     background-image: radial-gradient(70rem 40rem at 10% -10%, #1a49a838, transparent 60%),
       radial-gradient(60rem 36rem at 95% 5%, #2d9c6824, transparent 60%);
     background-attachment: fixed;
   }
+
 
   h1,
   h2,
