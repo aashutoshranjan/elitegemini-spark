@@ -113,7 +113,7 @@ function Contact() {
                 <h2 className="text-xl font-bold">Project enquiry</h2>
                 <div className="mt-7 grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    <label className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--subheading)" }}>
                       Full name
                     </label>
                     <input
@@ -125,7 +125,7 @@ function Contact() {
                     {errors.name && <p className="mt-1.5 text-xs text-destructive">{errors.name}</p>}
                   </div>
                   <div>
-                    <label className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    <label className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--subheading)" }}>
                       Business email
                     </label>
                     <input
@@ -139,7 +139,7 @@ function Contact() {
                     )}
                   </div>
                   <div>
-                    <label className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    <label className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--subheading)" }}>
                       Phone
                     </label>
                     <input
@@ -153,7 +153,7 @@ function Contact() {
                     )}
                   </div>
                   <div>
-                    <label className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    <label className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--subheading)" }}>
                       Service interested in
                     </label>
                     <select
@@ -171,7 +171,7 @@ function Contact() {
                 </div>
 
                 <div className="mt-5">
-                  <label className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                  <label className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--subheading)" }}>
                     Budget range
                   </label>
                   <div className="mt-3 flex flex-wrap gap-2">
@@ -193,7 +193,7 @@ function Contact() {
                 </div>
 
                 <div className="mt-5">
-                  <label className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                  <label className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--subheading)" }}>
                     Message
                   </label>
                   <textarea

@@ -192,7 +192,7 @@ function CaseStudies() {
                 {s.metrics.map((m) => (
                   <div key={m.label} className="text-center">
                     <m.icon className="mx-auto size-4 text-primary" />
-                    <div className="mt-1.5 text-base font-extrabold">{m.value}</div>
+                    <div className="mt-1.5 text-base font-extrabold" style={{ color: "var(--aqua)" }}>{m.value}</div>
                     <div className="text-[10px] leading-tight text-muted-foreground">{m.label}</div>
                   </div>
                 ))}
@@ -266,7 +266,7 @@ function CaseStudies() {
                   key={m.label}
                   className="rounded-2xl border border-glass-border bg-glass p-5 text-center"
                 >
-                  <div className="text-2xl font-extrabold text-gradient">{m.value}</div>
+                  <div className="text-2xl font-extrabold" style={{ color: "var(--aqua)" }}>{m.value}</div>
                   <div className="mt-1 text-xs text-muted-foreground">{m.label}</div>
                 </div>
               ))}
