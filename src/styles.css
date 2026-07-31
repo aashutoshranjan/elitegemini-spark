@@ -51,34 +51,36 @@
   --brand-violet: var(--emerald);
   --brand-blue: var(--sapphire);
 
-  --background: oklch(0.977 0.005 250);
-  --foreground: #1f2a3d;
-  --heading: var(--sapphire);
-  --subheading: #237850;
-  --card: oklch(1 0 0);
-  --card-foreground: #1f2a3d;
-  --popover: oklch(0.99 0.004 250);
-  --popover-foreground: #1f2a3d;
+  --background: #f4f7fc;
+  --foreground: #1b2437;
+  --heading: #17408f;
+  --subheading: #1f7a53;
+  --card: #ffffffcc;
+  --card-foreground: #1b2437;
+  --popover: #ffffff;
+  --popover-foreground: #1b2437;
   --primary: var(--sapphire);
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: #e6ecf5;
-  --secondary-foreground: #1f2a3d;
-  --muted: #e9eef5;
-  --muted-foreground: #66748a;
-  --accent: #dcf0e6;
-  --accent-foreground: #1c6a48;
+  --primary-foreground: #ffffff;
+  --secondary: #e8eefa;
+  --secondary-foreground: #1b2437;
+  --muted: #eaf0f8;
+  --muted-foreground: #5d6b82;
+  --accent: #dff2e8;
+  --accent-foreground: #176346;
   --destructive: oklch(0.6 0.23 27);
-  --destructive-foreground: oklch(0.99 0 0);
-  --border: #cfd7e2;
-  --input: #cfd7e2;
+  --destructive-foreground: #ffffff;
+  --border: #d7e0ee;
+  --input: #d7e0ee;
   --ring: var(--aqua);
 
-  --glass: oklch(1 0 0 / 62%);
-  --glass-border: #1a49a824;
-  --glass-blur: 22px;
-  --shadow-glass: 0 20px 60px -24px #1a49a840;
-  --glow-primary: 0 0 0 1px #1a49a83d, 0 12px 40px -12px #1a49a880;
+  --glass: #ffffffa8;
+  --glass-border: #ffffffcc;
+  --glass-blur: 26px;
+  --orb-opacity: 0.22;
+  --shadow-glass: 0 24px 70px -30px #1a49a83d, 0 2px 10px -4px #1a49a814;
+  --glow-primary: 0 0 0 1px #1a49a826, 0 14px 40px -14px #1a49a866;
   --gradient-brand: linear-gradient(120deg, var(--sapphire), var(--aqua) 55%, var(--emerald));
+
 }
 
 .dark {
@@ -105,6 +107,7 @@
   --ring: var(--aqua);
 
   --brand-blue: #3f79dd;
+  --orb-opacity: 0.45;
 
   --glass: #16203380;
   --glass-border: #ffffff1f;
@@ -132,11 +135,19 @@
       color 400ms ease;
   }
 
+  body {
+    background-image: radial-gradient(70rem 40rem at 8% -12%, #4da5e92e, transparent 62%),
+      radial-gradient(58rem 34rem at 96% 2%, #2d9c6824, transparent 62%),
+      radial-gradient(50rem 30rem at 50% 110%, #1a49a81f, transparent 65%);
+    background-attachment: fixed;
+  }
+
   .dark body {
     background-image: radial-gradient(70rem 40rem at 10% -10%, #1a49a838, transparent 60%),
       radial-gradient(60rem 36rem at 95% 5%, #2d9c6824, transparent 60%);
     background-attachment: fixed;
   }
+
 
   h1,
   h2,
@@ -199,7 +210,7 @@
   position: absolute;
   border-radius: 9999px;
   filter: blur(90px);
-  opacity: 0.45;
+  opacity: var(--orb-opacity, 0.45);
   animation: orb-float 18s ease-in-out infinite;
 }
 
