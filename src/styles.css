@@ -41,64 +41,78 @@
 
 :root {
   --radius: 1rem;
-  --brand-cyan: oklch(0.86 0.14 197);
-  --brand-violet: oklch(0.55 0.29 300);
-  --brand-blue: oklch(0.63 0.19 259);
+  /* Sapphire Emerald palette */
+  --sapphire: #1a49a8;
+  --emerald: #2d9c68;
+  --aqua: #4da5e9;
+  --cool-gray: #a8b3c4;
 
-  --background: oklch(0.975 0.006 250);
-  --foreground: oklch(0.24 0.03 258);
+  --brand-cyan: var(--aqua);
+  --brand-violet: var(--emerald);
+  --brand-blue: var(--sapphire);
+
+  --background: oklch(0.977 0.005 250);
+  --foreground: #1f2a3d;
+  --heading: var(--sapphire);
+  --subheading: #23785089;
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.03 258);
+  --card-foreground: #1f2a3d;
   --popover: oklch(0.99 0.004 250);
-  --popover-foreground: oklch(0.24 0.03 258);
-  --primary: oklch(0.55 0.2 265);
+  --popover-foreground: #1f2a3d;
+  --primary: var(--sapphire);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.94 0.01 250);
-  --secondary-foreground: oklch(0.3 0.03 258);
-  --muted: oklch(0.94 0.01 250);
-  --muted-foreground: oklch(0.5 0.02 258);
-  --accent: oklch(0.92 0.04 220);
-  --accent-foreground: oklch(0.28 0.04 258);
+  --secondary: #e6ecf5;
+  --secondary-foreground: #1f2a3d;
+  --muted: #e9eef5;
+  --muted-foreground: #66748a;
+  --accent: #dcf0e6;
+  --accent-foreground: #1c6a48;
   --destructive: oklch(0.6 0.23 27);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.88 0.012 250);
-  --input: oklch(0.9 0.012 250);
-  --ring: oklch(0.63 0.19 259);
+  --border: #cfd7e2;
+  --input: #cfd7e2;
+  --ring: var(--aqua);
 
-  --glass: oklch(1 0 0 / 60%);
-  --glass-border: oklch(0.5 0.05 260 / 14%);
+  --glass: oklch(1 0 0 / 62%);
+  --glass-border: #1a49a824;
   --glass-blur: 22px;
-  --shadow-glass: 0 20px 60px -24px oklch(0.4 0.1 262 / 35%);
-  --glow-primary: 0 0 0 1px oklch(0.63 0.19 259 / 25%), 0 12px 40px -12px oklch(0.63 0.19 259 / 55%);
-  --gradient-brand: linear-gradient(120deg, var(--brand-cyan), var(--brand-blue) 45%, var(--brand-violet));
+  --shadow-glass: 0 20px 60px -24px #1a49a840;
+  --glow-primary: 0 0 0 1px #1a49a83d, 0 12px 40px -12px #1a49a880;
+  --gradient-brand: linear-gradient(120deg, var(--sapphire), var(--aqua) 55%, var(--emerald));
 }
 
 .dark {
-  --background: oklch(0.16 0.03 265);
-  --foreground: oklch(0.96 0.01 250);
-  --card: oklch(0.21 0.035 265);
-  --card-foreground: oklch(0.96 0.01 250);
-  --popover: oklch(0.2 0.035 265);
-  --popover-foreground: oklch(0.96 0.01 250);
-  --primary: oklch(0.7 0.17 255);
-  --primary-foreground: oklch(0.14 0.03 265);
-  --secondary: oklch(0.27 0.04 265);
-  --secondary-foreground: oklch(0.96 0.01 250);
-  --muted: oklch(0.27 0.04 265);
-  --muted-foreground: oklch(0.72 0.03 258);
-  --accent: oklch(0.32 0.06 265);
-  --accent-foreground: oklch(0.96 0.01 250);
+  --background: #0b1120;
+  --foreground: #e7edf6;
+  --heading: #7fb4f5;
+  --subheading: #56c79a;
+  --card: #121a2c;
+  --card-foreground: #e7edf6;
+  --popover: #121a2c;
+  --popover-foreground: #e7edf6;
+  --primary: #4d84e0;
+  --primary-foreground: #061021;
+  --secondary: #1b2740;
+  --secondary-foreground: #e7edf6;
+  --muted: #1b2740;
+  --muted-foreground: var(--cool-gray);
+  --accent: #17392b;
+  --accent-foreground: #7fdcb2;
   --destructive: oklch(0.7 0.19 22);
-  --destructive-foreground: oklch(0.14 0.03 265);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 16%);
-  --ring: oklch(0.7 0.17 255);
+  --destructive-foreground: #061021;
+  --border: #ffffff1f;
+  --input: #ffffff29;
+  --ring: var(--aqua);
 
-  --glass: oklch(0.26 0.04 265 / 45%);
-  --glass-border: oklch(1 0 0 / 12%);
-  --shadow-glass: 0 24px 70px -28px oklch(0 0 0 / 80%);
-  --glow-primary: 0 0 0 1px oklch(0.7 0.17 255 / 35%), 0 14px 45px -12px oklch(0.7 0.17 255 / 60%);
+  --brand-blue: #3f79dd;
+
+  --glass: #16203380;
+  --glass-border: #ffffff1f;
+  --shadow-glass: 0 24px 70px -28px #000000cc;
+  --glow-primary: 0 0 0 1px #4da5e945, 0 14px 45px -12px #1a49a899;
+  --gradient-brand: linear-gradient(120deg, #4d84e0, var(--aqua) 55%, #3fc08c);
 }
+
 
 @layer base {
   * {
