@@ -54,7 +54,7 @@
   --background: oklch(0.977 0.005 250);
   --foreground: #1f2a3d;
   --heading: var(--sapphire);
-  --subheading: #23785089;
+  --subheading: #237850;
   --card: oklch(1 0 0);
   --card-foreground: #1f2a3d;
   --popover: oklch(0.99 0.004 250);
