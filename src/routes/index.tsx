@@ -7,6 +7,18 @@ import {
   ArrowRight,
   Sparkles,
   Quote,
+  Code2,
+  BarChart3,
+  Workflow,
+  Lightbulb,
+  Check,
+  Users,
+  Globe2,
+  Rocket,
+  Target,
+  Layers,
+  Plus,
+  Minus,
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-kit";
