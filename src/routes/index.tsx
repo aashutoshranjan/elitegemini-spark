@@ -14,13 +14,13 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Elitegemini Innovations | Enterprise AI & Cloud Agency in Bangalore" },
+      { title: "Elitegemini Technologies | Enterprise AI & Cloud Agency in Bangalore" },
       {
         name: "description",
         content:
           "Architecting tomorrow's intelligence today. Custom AI, cloud-native engineering and enterprise software from Bangalore, India.",
       },
-      { property: "og:title", content: "Elitegemini Innovations | Enterprise AI & Cloud Agency" },
+      { property: "og:title", content: "Elitegemini Technologies | Enterprise AI & Cloud Agency" },
       {
         property: "og:description",
         content:
@@ -149,7 +149,7 @@ function Home() {
           {[
             ["99.8%", "Platform uptime across managed workloads"],
             ["150+", "Enterprise applications shipped"],
-            ["$500M+", "Client value created since 2016"],
+            ["$500M+", "Client value created since 2017"],
           ].map(([stat, label]) => (
             <GlassCard key={stat} className="p-8 text-center">
               <div className="text-4xl font-extrabold text-gradient">{stat}</div>

@@ -78,13 +78,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Elitegemini Innovations — AI & Cloud Engineering, Bangalore" },
+      { title: "Elitegemini Technologies — AI & Cloud Engineering, Bangalore" },
       {
         name: "description",
         content:
-          "Elitegemini Innovations is a Bangalore-based enterprise AI, cloud and software engineering agency.",
+          "Elitegemini Technologies is a Bangalore-based enterprise AI, cloud and software engineering agency.",
       },
-      { name: "author", content: "Elitegemini Innovations" },
+      { name: "author", content: "Elitegemini Technologies" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

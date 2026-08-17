@@ -121,7 +121,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-2 border-t border-glass-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Elitegemini Innovations Pvt. Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Elitegemini Technologies Pvt. Ltd. All rights reserved.</p>
           <p>Bengaluru · Karnataka · India</p>
         </div>
       </div>
