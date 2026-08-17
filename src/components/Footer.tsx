@@ -80,7 +80,7 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex gap-2.5">
-                <Mail className="size-4 shrink-0 text-primary" /> support@elitegemini.com
+                <Globe className="size-4 shrink-0 text-primary" /> elitegemini.com
               </li>
             </ul>
           </div>
