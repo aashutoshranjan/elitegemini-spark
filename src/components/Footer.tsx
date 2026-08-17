@@ -26,19 +26,17 @@ export function Footer() {
               Bangalore-born engineering studio building enterprise AI, cloud and product platforms
               for global teams.
             </p>
-            <div className="mt-5 flex gap-2">
-              {[Linkedin, Twitter, Github].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="https://www.linkedin.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Social profile"
-                  className="grid size-9 place-items-center rounded-full border border-glass-border bg-glass text-muted-foreground transition-colors hover:text-primary"
-                >
-                  <Icon className="size-4" />
-                </a>
-              ))}
+            <div className="mt-5">
+              <a
+                href="https://www.linkedin.com/company/elite-gemini/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Elitegemini Technologies on LinkedIn"
+                className="inline-flex items-center gap-3 rounded-2xl border border-glass-border bg-glass px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:text-primary"
+              >
+                <Linkedin className="size-7 text-primary" />
+                Follow us on LinkedIn
+              </a>
             </div>
           </div>
 

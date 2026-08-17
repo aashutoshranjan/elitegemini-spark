@@ -85,7 +85,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Elitegemini Technologies is a Bangalore-based enterprise AI, cloud and software engineering agency.",
       },
       { name: "author", content: "Elitegemini Technologies" },
+      { name: "robots", content: "index, follow" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Elitegemini Technologies" },
+      { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -97,6 +100,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap",
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Elitegemini Technologies",
+          alternateName: "Elite Gemini",
+          url: "https://elitegemini-spark.lovable.app",
+          email: "support@elitegemini.com",
+          foundingDate: "2017",
+          description:
+            "Bangalore-based IT services and consulting company specialising in Artificial Intelligence, custom software development, cloud solutions, data analytics, cybersecurity, web and mobile apps, enterprise automation and IT consulting.",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress:
+              "K39/7, Mahatma Gandhi Rd, behind Oriental Bank of Commerce, Craig Park Layout, Ashok Nagar",
+            addressLocality: "Bengaluru",
+            addressRegion: "Karnataka",
+            postalCode: "560001",
+            addressCountry: "IN",
+          },
+          sameAs: ["https://www.linkedin.com/company/elite-gemini/"],
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,
