@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Gem, Github, Linkedin, MapPin, Phone, Mail, Twitter, Send } from "lucide-react";
+import { Gem, Github, Globe, Linkedin, MapPin, Mail, Twitter, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { useTheme } from "./theme";
