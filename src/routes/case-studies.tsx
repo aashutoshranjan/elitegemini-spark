@@ -18,7 +18,11 @@ export const Route = createFileRoute("/case-studies")({
         content:
           "Detailed problem statements, solution architectures and metrics from delivered enterprise programmes.",
       },
+      { property: "og:url", content: "https://elitegemini-spark.lovable.app/case-studies" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app/case-studies" }],
   }),
   component: CaseStudies,
 });

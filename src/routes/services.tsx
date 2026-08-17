@@ -29,7 +29,11 @@ export const Route = createFileRoute("/services")({
         content:
           "Explore our four service lines, technology stack and the four-step Discover → Architect → Execute → Scale engagement model.",
       },
+      { property: "og:url", content: "https://elitegemini-spark.lovable.app/services" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app/services" }],
   }),
   component: Services,
 });

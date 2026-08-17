@@ -17,7 +17,11 @@ export const Route = createFileRoute("/about")({
         content:
           "Our vision, core pillars, executive leadership and the Bangalore Innovation Lab powering enterprise AI delivery.",
       },
+      { property: "og:url", content: "https://elitegemini-spark.lovable.app/about" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app/about" }],
   }),
   component: About,
 });
