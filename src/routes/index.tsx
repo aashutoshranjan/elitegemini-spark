@@ -7,6 +7,18 @@ import {
   ArrowRight,
   Sparkles,
   Quote,
+  Code2,
+  BarChart3,
+  Workflow,
+  Lightbulb,
+  Check,
+  Users,
+  Globe2,
+  Rocket,
+  Target,
+  Layers,
+  Plus,
+  Minus,
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-kit";
@@ -14,13 +26,13 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Elitegemini Innovations | Enterprise AI & Cloud Agency in Bangalore" },
+      { title: "Elitegemini Technologies | Enterprise AI & Cloud Agency in Bangalore" },
       {
         name: "description",
         content:
           "Architecting tomorrow's intelligence today. Custom AI, cloud-native engineering and enterprise software from Bangalore, India.",
       },
-      { property: "og:title", content: "Elitegemini Innovations | Enterprise AI & Cloud Agency" },
+      { property: "og:title", content: "Elitegemini Technologies | Enterprise AI & Cloud Agency" },
       {
         property: "og:description",
         content:
@@ -100,6 +112,195 @@ const testimonials = [
   },
 ];
 
+const services = [
+  {
+    icon: BrainCircuit,
+    title: "Artificial Intelligence & Machine Learning",
+    body: "LLM copilots, RAG systems, predictive models and computer vision built for production reliability.",
+  },
+  {
+    icon: Code2,
+    title: "Custom Software Development",
+    body: "Bespoke platforms engineered around your workflows, not around an off-the-shelf template.",
+  },
+  {
+    icon: Smartphone,
+    title: "Web & Mobile App Development",
+    body: "Design-led React, React Native and edge-rendered experiences that feel instant everywhere.",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud Computing & DevOps",
+    body: "Kubernetes, IaC, CI/CD and FinOps-tuned platforms across AWS, Azure and Google Cloud.",
+  },
+  {
+    icon: BarChart3,
+    title: "Data Analytics & Business Intelligence",
+    body: "Modern data stacks, warehouses, semantic layers and dashboards leaders actually use.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Cybersecurity Solutions",
+    body: "Zero-trust architecture, threat modelling, SOC2/ISO readiness and continuous security automation.",
+  },
+  {
+    icon: Workflow,
+    title: "Enterprise Automation & Digital Transformation",
+    body: "Process mining, intelligent document workflows and legacy modernisation with measurable ROI.",
+  },
+  {
+    icon: Lightbulb,
+    title: "IT Consulting & Managed Services",
+    body: "Architecture reviews, technology roadmaps and 24/7 managed operations from Bengaluru.",
+  },
+];
+
+const whyUs = [
+  {
+    icon: Users,
+    title: "Client-Centric Approach",
+    body: "Every engagement starts with your business goals, budget reality and delivery constraints — never a template.",
+  },
+  {
+    icon: Target,
+    title: "Experienced Technology Experts",
+    body: "Senior architects and engineers who have shipped regulated, high-volume systems since 2017.",
+  },
+  {
+    icon: Layers,
+    title: "Scalable & Secure Solutions",
+    body: "Architecture that survives 100x growth, with security and compliance designed in from day one.",
+  },
+  {
+    icon: Rocket,
+    title: "Innovation-Driven Development",
+    body: "Applied AI research folded into everyday delivery, so your roadmap stays ahead of the market.",
+  },
+  {
+    icon: Globe2,
+    title: "Global Delivery Standards",
+    body: "Bengaluru engineering with overlapping hours, transparent reporting and enterprise-grade governance.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Integrity & Excellence",
+    body: "Fixed commitments, honest estimates and code you own outright — no lock-in, no surprises.",
+  },
+];
+
+const process = [
+  {
+    step: "01",
+    title: "Discover",
+    body: "Workshops with your stakeholders to map processes, data and the commercial outcome we are chasing.",
+  },
+  {
+    step: "02",
+    title: "Architect",
+    body: "Solution blueprint, technology selection, security model and a delivery plan with clear milestones.",
+  },
+  {
+    step: "03",
+    title: "Build",
+    body: "Two-week sprints, demoable increments, automated testing and continuous deployment pipelines.",
+  },
+  {
+    step: "04",
+    title: "Scale",
+    body: "Observability, performance tuning, managed operations and a quarterly innovation roadmap.",
+  },
+];
+
+const industriesServed = [
+  "FinTech & Banking",
+  "Healthcare & Life Sciences",
+  "Retail & E-Commerce",
+  "Manufacturing & Supply Chain",
+  "SaaS & Technology",
+  "Logistics & Mobility",
+  "EdTech",
+  "Energy & Utilities",
+];
+
+const techStack = [
+  "Python",
+  "TypeScript",
+  "React",
+  "Node.js",
+  "Go",
+  "PyTorch",
+  "LangChain",
+  "Kubernetes",
+  "Terraform",
+  "AWS",
+  "Azure",
+  "GCP",
+  "PostgreSQL",
+  "Snowflake",
+  "Kafka",
+  "Databricks",
+];
+
+const engagementModels = [
+  {
+    title: "Dedicated Product Team",
+    body: "A cross-functional squad — architect, engineers, designer, QA — embedded with your business for the long run.",
+    points: ["Monthly rolling contract", "Your tooling and rituals", "Scale up or down each quarter"],
+  },
+  {
+    title: "Fixed-Scope Delivery",
+    body: "A defined outcome, a defined budget and a defined date. Ideal for MVPs, migrations and modernisation.",
+    points: ["Milestone-based billing", "Signed-off scope document", "Warranty period included"],
+  },
+  {
+    title: "Managed Services & Support",
+    body: "24/7 operations, SRE cover and continuous improvement for platforms already running in production.",
+    points: ["SLA-backed response", "Proactive cost optimisation", "Quarterly roadmap reviews"],
+  },
+];
+
+const faqs = [
+  {
+    q: "How quickly can a team start?",
+    a: "For most engagements we mobilise a discovery lead within a week and a full squad within two to three weeks, depending on the specialisations required.",
+  },
+  {
+    q: "Do you work with startups as well as enterprises?",
+    a: "Yes. We deliberately serve startups, SMEs and large enterprises — the engineering standard is identical, only the engagement model and cadence change.",
+  },
+  {
+    q: "Who owns the intellectual property?",
+    a: "You do, completely. All source code, infrastructure definitions and documentation are transferred to your accounts as they are written.",
+  },
+  {
+    q: "How do you approach AI safety and data privacy?",
+    a: "Data residency, PII redaction, evaluation harnesses and human-in-the-loop review are part of every AI programme, alongside DPDP and GDPR alignment.",
+  },
+  {
+    q: "Can you work with our existing in-house team?",
+    a: "Frequently. We integrate into your sprint rituals, review your pull requests and hand over knowledge continuously so your team grows with the platform.",
+  },
+];
+
+function FaqItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <GlassCard hover={false} className="overflow-hidden">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+      >
+        <span className="text-base font-semibold">{q}</span>
+        <span className="grid size-8 shrink-0 place-items-center rounded-full border border-glass-border bg-glass text-primary">
+          {open ? <Minus className="size-4" /> : <Plus className="size-4" />}
+        </span>
+      </button>
+      {open && <p className="px-6 pb-6 text-sm leading-relaxed text-muted-foreground">{a}</p>}
+    </GlassCard>
+  );
+}
+
 function Home() {
   const [industry, setIndustry] = useState(industries[0].key);
   const [scale, setScale] = useState(scales[1].key);
@@ -149,7 +350,7 @@ function Home() {
           {[
             ["99.8%", "Platform uptime across managed workloads"],
             ["150+", "Enterprise applications shipped"],
-            ["$500M+", "Client value created since 2016"],
+            ["$500M+", "Client value created since 2017"],
           ].map(([stat, label]) => (
             <GlassCard key={stat} className="p-8 text-center">
               <div className="text-4xl font-extrabold text-gradient">{stat}</div>
@@ -182,6 +383,145 @@ function Home() {
               <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{e.body}</p>
             </GlassCard>
           ))}
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <SectionHeading
+              align="left"
+              eyebrow="Our Mission"
+              title={
+                <>
+                  Future-ready technology that drives{" "}
+                  <span className="text-gradient">measurable impact</span>
+                </>
+              }
+              subtitle="We empower startups, SMEs and enterprises with intelligent, reliable and scalable systems — combining deep technical expertise with a genuinely customer-first way of working."
+            />
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+              From concept to deployment, our Bengaluru team builds high-quality digital products
+              tailored to each client's business goals — engineered for efficiency, innovation and
+              sustainable growth.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              {["Innovation", "Integrity", "Excellence"].map((v) => (
+                <span
+                  key={v}
+                  className="rounded-full border border-glass-border bg-glass px-5 py-2 text-sm font-semibold"
+                >
+                  {v}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              ["2017", "Founded in Bengaluru"],
+              ["40+", "Engineers, designers & architects"],
+              ["12", "Countries served"],
+              ["96%", "Client retention rate"],
+            ].map(([stat, label]) => (
+              <GlassCard key={stat} className="p-7">
+                <div className="text-3xl font-extrabold text-gradient">{stat}</div>
+                <p className="mt-2 text-sm text-muted-foreground">{label}</p>
+              </GlassCard>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="What We Do"
+          title={
+            <>
+              Eight practices, one <span className="text-gradient">delivery standard</span>
+            </>
+          }
+          subtitle="A complete engineering partner — from applied AI research through to managed operations."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {services.map((s) => (
+            <GlassCard key={s.title} className="flex h-full flex-col p-7">
+              <span
+                className="grid size-11 place-items-center rounded-2xl"
+                style={{
+                  background: "color-mix(in oklab, var(--emerald) 88%, transparent)",
+                  boxShadow:
+                    "0 10px 30px -12px color-mix(in oklab, var(--emerald) 70%, transparent)",
+                }}
+              >
+                <s.icon className="size-5" style={{ color: "oklch(0.99 0 0)" }} />
+              </span>
+              <h3 className="mt-5 text-base font-bold leading-snug">{s.title}</h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
+            </GlassCard>
+          ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link
+            to="/services"
+            className="glass glass-hover inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold"
+          >
+            See how we deliver <ArrowRight className="size-4" />
+          </Link>
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="Why Elitegemini"
+          title={
+            <>
+              Chosen for <span className="text-gradient">rigour</span>, retained for results
+            </>
+          }
+          subtitle="Innovation. Integrity. Excellence. Building tomorrow's technology, today."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {whyUs.map((w) => (
+            <GlassCard key={w.title} className="p-7">
+              <div className="flex items-center gap-3">
+                <span className="grid size-10 place-items-center rounded-xl border border-glass-border bg-glass text-primary">
+                  <w.icon className="size-5" />
+                </span>
+                <h3 className="text-base font-bold">{w.title}</h3>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{w.body}</p>
+            </GlassCard>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="Industries"
+          title="Domains we know from the inside"
+          subtitle="Regulated, data-heavy and operationally complex sectors are where our architecture work pays for itself fastest."
+        />
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {industriesServed.map((i) => (
+            <GlassCard key={i} className="flex items-center gap-3 p-5">
+              <Check className="size-4 shrink-0 text-primary" />
+              <span className="text-sm font-semibold">{i}</span>
+            </GlassCard>
+          ))}
+        </div>
+
+        <div className="glass mt-10 overflow-hidden rounded-3xl py-5">
+          <div className="flex w-max animate-ticker gap-10 px-6">
+            {[...techStack, ...techStack].map((t, i) => (
+              <span
+                key={i}
+                className="whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-muted-foreground/70"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
         </div>
       </Section>
 
@@ -287,6 +627,76 @@ function Home() {
           </GlassCard>
         </div>
       </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="How We Work"
+          title={
+            <>
+              From concept to <span className="text-gradient">deployment</span>
+            </>
+          }
+          subtitle="A four-stage delivery model refined across 150+ enterprise programmes."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {process.map((p) => (
+            <GlassCard key={p.step} className="relative p-7">
+              <span
+                className="text-4xl font-extrabold"
+                style={{ color: "color-mix(in oklab, var(--emerald) 85%, transparent)" }}
+              >
+                {p.step}
+              </span>
+              <h3 className="mt-4 text-lg font-bold">{p.title}</h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
+            </GlassCard>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="Engagement Models"
+          title="Work with us the way that fits"
+          subtitle="Startup, SME or enterprise — the commercial model flexes, the engineering standard does not."
+        />
+        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          {engagementModels.map((m) => (
+            <GlassCard key={m.title} className="flex h-full flex-col p-8">
+              <h3 className="text-xl font-bold">{m.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.body}</p>
+              <ul className="mt-6 space-y-3 text-sm">
+                {m.points.map((pt) => (
+                  <li key={pt} className="flex items-start gap-2.5">
+                    <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                    <span className="text-muted-foreground">{pt}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to="/contact"
+                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+              >
+                Discuss this model <ArrowRight className="size-4" />
+              </Link>
+            </GlassCard>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="FAQ"
+          title="Questions we hear before kick-off"
+          subtitle="Still unsure? Write to support@elitegemini.com and an architect will reply, not a sales team."
+        />
+        <div className="mx-auto mt-12 grid max-w-3xl gap-4">
+          {faqs.map((f) => (
+            <FaqItem key={f.q} q={f.q} a={f.a} />
+          ))}
+        </div>
+      </Section>
+
 
       <Section>
         <SectionHeading eyebrow="Enterprise Trust" title="Teams that build with us" />

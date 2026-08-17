@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Gem, Github, Linkedin, MapPin, Phone, Mail, Twitter, Send } from "lucide-react";
+import { Gem, Github, Globe, Linkedin, MapPin, Mail, Twitter, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { useTheme } from "./theme";
@@ -74,10 +74,13 @@ export function Footer() {
                 Nagar, Bengaluru, Karnataka 560001
               </li>
               <li className="flex gap-2.5">
-                <Phone className="size-4 shrink-0 text-primary" /> +91 80 4718 2200
+                <Mail className="size-4 shrink-0 text-primary" />
+                <a href="mailto:support@elitegemini.com" className="hover:text-primary">
+                  support@elitegemini.com
+                </a>
               </li>
               <li className="flex gap-2.5">
-                <Mail className="size-4 shrink-0 text-primary" /> hello@elitegemini.in
+                <Globe className="size-4 shrink-0 text-primary" /> elitegemini.com
               </li>
             </ul>
           </div>
@@ -121,7 +124,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-2 border-t border-glass-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Elitegemini Innovations Pvt. Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Elitegemini Technologies Pvt. Ltd. All rights reserved.</p>
           <p>Bengaluru · Karnataka · India</p>
         </div>
       </div>

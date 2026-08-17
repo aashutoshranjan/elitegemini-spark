@@ -26,7 +26,7 @@ export function Header() {
             <Gem className="size-5 text-primary-foreground" strokeWidth={2.2} />
           </span>
           <span className="font-display text-base font-extrabold tracking-tight sm:text-lg">
-            Elitegemini <span className="text-gradient">Innovations</span>
+            Elitegemini <span className="text-gradient">Technologies</span>
           </span>
         </Link>
 

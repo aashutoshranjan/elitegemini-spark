@@ -5,13 +5,13 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Elitegemini Innovations | Bangalore Engineering Studio" },
+      { title: "About Elitegemini Technologies | Bangalore Engineering Studio" },
       {
         name: "description",
         content:
-          "From the Silicon Valley of India to global enterprises — the story, pillars and leadership behind Elitegemini Innovations.",
+          "From the Silicon Valley of India to global enterprises — the story, pillars and leadership behind Elitegemini Technologies.",
       },
-      { property: "og:title", content: "About Elitegemini Innovations" },
+      { property: "og:title", content: "About Elitegemini Technologies" },
       {
         property: "og:description",
         content:
@@ -65,7 +65,7 @@ function About() {
               Built in the <span className="text-gradient">Silicon Valley of India</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Elitegemini Innovations began in 2016 with four engineers in an Ashok Nagar walk-up and
+              Elitegemini Technologies began in 2017 with four engineers in an Ashok Nagar walk-up and
               a stubborn belief: enterprise software should feel like consumer software and reason
               like a domain expert.
             </p>
@@ -77,7 +77,7 @@ function About() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              ["2016", "Founded in Bengaluru"],
+              ["2017", "Founded in Bengaluru"],
               ["230+", "Engineers & researchers"],
               ["18", "Countries served"],
               ["4.9/5", "Client satisfaction"],
