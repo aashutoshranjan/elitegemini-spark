@@ -387,6 +387,145 @@ function Home() {
       </Section>
 
       <Section>
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <SectionHeading
+              align="left"
+              eyebrow="Our Mission"
+              title={
+                <>
+                  Future-ready technology that drives{" "}
+                  <span className="text-gradient">measurable impact</span>
+                </>
+              }
+              subtitle="We empower startups, SMEs and enterprises with intelligent, reliable and scalable systems — combining deep technical expertise with a genuinely customer-first way of working."
+            />
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+              From concept to deployment, our Bengaluru team builds high-quality digital products
+              tailored to each client's business goals — engineered for efficiency, innovation and
+              sustainable growth.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              {["Innovation", "Integrity", "Excellence"].map((v) => (
+                <span
+                  key={v}
+                  className="rounded-full border border-glass-border bg-glass px-5 py-2 text-sm font-semibold"
+                >
+                  {v}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              ["2017", "Founded in Bengaluru"],
+              ["40+", "Engineers, designers & architects"],
+              ["12", "Countries served"],
+              ["96%", "Client retention rate"],
+            ].map(([stat, label]) => (
+              <GlassCard key={stat} className="p-7">
+                <div className="text-3xl font-extrabold text-gradient">{stat}</div>
+                <p className="mt-2 text-sm text-muted-foreground">{label}</p>
+              </GlassCard>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="What We Do"
+          title={
+            <>
+              Eight practices, one <span className="text-gradient">delivery standard</span>
+            </>
+          }
+          subtitle="A complete engineering partner — from applied AI research through to managed operations."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {services.map((s) => (
+            <GlassCard key={s.title} className="flex h-full flex-col p-7">
+              <span
+                className="grid size-11 place-items-center rounded-2xl"
+                style={{
+                  background: "color-mix(in oklab, var(--emerald) 88%, transparent)",
+                  boxShadow:
+                    "0 10px 30px -12px color-mix(in oklab, var(--emerald) 70%, transparent)",
+                }}
+              >
+                <s.icon className="size-5" style={{ color: "oklch(0.99 0 0)" }} />
+              </span>
+              <h3 className="mt-5 text-base font-bold leading-snug">{s.title}</h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
+            </GlassCard>
+          ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link
+            to="/services"
+            className="glass glass-hover inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold"
+          >
+            See how we deliver <ArrowRight className="size-4" />
+          </Link>
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="Why Elitegemini"
+          title={
+            <>
+              Chosen for <span className="text-gradient">rigour</span>, retained for results
+            </>
+          }
+          subtitle="Innovation. Integrity. Excellence. Building tomorrow's technology, today."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {whyUs.map((w) => (
+            <GlassCard key={w.title} className="p-7">
+              <div className="flex items-center gap-3">
+                <span className="grid size-10 place-items-center rounded-xl border border-glass-border bg-glass text-primary">
+                  <w.icon className="size-5" />
+                </span>
+                <h3 className="text-base font-bold">{w.title}</h3>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{w.body}</p>
+            </GlassCard>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="Industries"
+          title="Domains we know from the inside"
+          subtitle="Regulated, data-heavy and operationally complex sectors are where our architecture work pays for itself fastest."
+        />
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {industriesServed.map((i) => (
+            <GlassCard key={i} className="flex items-center gap-3 p-5">
+              <Check className="size-4 shrink-0 text-primary" />
+              <span className="text-sm font-semibold">{i}</span>
+            </GlassCard>
+          ))}
+        </div>
+
+        <div className="glass mt-10 overflow-hidden rounded-3xl py-5">
+          <div className="flex w-max animate-ticker gap-10 px-6">
+            {[...techStack, ...techStack].map((t, i) => (
+              <span
+                key={i}
+                className="whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-muted-foreground/70"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section>
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div>
             <SectionHeading
