@@ -74,7 +74,10 @@ export function Footer() {
                 Nagar, Bengaluru, Karnataka 560001
               </li>
               <li className="flex gap-2.5">
-                <Phone className="size-4 shrink-0 text-primary" /> +91 80 4718 2200
+                <Mail className="size-4 shrink-0 text-primary" />
+                <a href="mailto:support@elitegemini.com" className="hover:text-primary">
+                  support@elitegemini.com
+                </a>
               </li>
               <li className="flex gap-2.5">
                 <Mail className="size-4 shrink-0 text-primary" /> support@elitegemini.com
