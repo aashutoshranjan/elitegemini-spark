@@ -242,7 +242,7 @@ function Contact() {
                   <Phone className="size-4 shrink-0 text-primary" /> +91 80 4718 2200
                 </li>
                 <li className="flex gap-3">
-                  <Mail className="size-4 shrink-0 text-primary" /> hello@elitegemini.in
+                  <Mail className="size-4 shrink-0 text-primary" /> support@elitegemini.com
                 </li>
                 <li className="flex gap-3">
                   <Clock className="size-4 shrink-0 text-primary" /> Mon–Fri, 09:30–19:00 IST

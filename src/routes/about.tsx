@@ -65,7 +65,7 @@ function About() {
               Built in the <span className="text-gradient">Silicon Valley of India</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Elitegemini Innovations began in 2016 with four engineers in an Ashok Nagar walk-up and
+              Elitegemini Innovations began in 2017 with four engineers in an Ashok Nagar walk-up and
               a stubborn belief: enterprise software should feel like consumer software and reason
               like a domain expert.
             </p>
