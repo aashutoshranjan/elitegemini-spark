@@ -38,7 +38,11 @@ export const Route = createFileRoute("/")({
         content:
           "Bangalore's premier custom AI, cloud and enterprise software innovation hub. 150+ enterprise apps delivered.",
       },
+      { property: "og:url", content: "https://elitegemini-spark.lovable.app" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app" }],
   }),
   component: Home,
 });

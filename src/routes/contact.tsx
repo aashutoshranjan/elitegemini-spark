@@ -28,7 +28,11 @@ export const Route = createFileRoute("/contact")({
         content:
           "K39/7, Mahatma Gandhi Rd, Ashok Nagar, Bengaluru 560001. Enquiries answered within one business day.",
       },
+      { property: "og:url", content: "https://elitegemini-spark.lovable.app/contact" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app/contact" }],
   }),
   component: Contact,
 });
