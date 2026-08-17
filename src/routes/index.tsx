@@ -112,6 +112,195 @@ const testimonials = [
   },
 ];
 
+const services = [
+  {
+    icon: BrainCircuit,
+    title: "Artificial Intelligence & Machine Learning",
+    body: "LLM copilots, RAG systems, predictive models and computer vision built for production reliability.",
+  },
+  {
+    icon: Code2,
+    title: "Custom Software Development",
+    body: "Bespoke platforms engineered around your workflows, not around an off-the-shelf template.",
+  },
+  {
+    icon: Smartphone,
+    title: "Web & Mobile App Development",
+    body: "Design-led React, React Native and edge-rendered experiences that feel instant everywhere.",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud Computing & DevOps",
+    body: "Kubernetes, IaC, CI/CD and FinOps-tuned platforms across AWS, Azure and Google Cloud.",
+  },
+  {
+    icon: BarChart3,
+    title: "Data Analytics & Business Intelligence",
+    body: "Modern data stacks, warehouses, semantic layers and dashboards leaders actually use.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Cybersecurity Solutions",
+    body: "Zero-trust architecture, threat modelling, SOC2/ISO readiness and continuous security automation.",
+  },
+  {
+    icon: Workflow,
+    title: "Enterprise Automation & Digital Transformation",
+    body: "Process mining, intelligent document workflows and legacy modernisation with measurable ROI.",
+  },
+  {
+    icon: Lightbulb,
+    title: "IT Consulting & Managed Services",
+    body: "Architecture reviews, technology roadmaps and 24/7 managed operations from Bengaluru.",
+  },
+];
+
+const whyUs = [
+  {
+    icon: Users,
+    title: "Client-Centric Approach",
+    body: "Every engagement starts with your business goals, budget reality and delivery constraints — never a template.",
+  },
+  {
+    icon: Target,
+    title: "Experienced Technology Experts",
+    body: "Senior architects and engineers who have shipped regulated, high-volume systems since 2017.",
+  },
+  {
+    icon: Layers,
+    title: "Scalable & Secure Solutions",
+    body: "Architecture that survives 100x growth, with security and compliance designed in from day one.",
+  },
+  {
+    icon: Rocket,
+    title: "Innovation-Driven Development",
+    body: "Applied AI research folded into everyday delivery, so your roadmap stays ahead of the market.",
+  },
+  {
+    icon: Globe2,
+    title: "Global Delivery Standards",
+    body: "Bengaluru engineering with overlapping hours, transparent reporting and enterprise-grade governance.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Integrity & Excellence",
+    body: "Fixed commitments, honest estimates and code you own outright — no lock-in, no surprises.",
+  },
+];
+
+const process = [
+  {
+    step: "01",
+    title: "Discover",
+    body: "Workshops with your stakeholders to map processes, data and the commercial outcome we are chasing.",
+  },
+  {
+    step: "02",
+    title: "Architect",
+    body: "Solution blueprint, technology selection, security model and a delivery plan with clear milestones.",
+  },
+  {
+    step: "03",
+    title: "Build",
+    body: "Two-week sprints, demoable increments, automated testing and continuous deployment pipelines.",
+  },
+  {
+    step: "04",
+    title: "Scale",
+    body: "Observability, performance tuning, managed operations and a quarterly innovation roadmap.",
+  },
+];
+
+const industriesServed = [
+  "FinTech & Banking",
+  "Healthcare & Life Sciences",
+  "Retail & E-Commerce",
+  "Manufacturing & Supply Chain",
+  "SaaS & Technology",
+  "Logistics & Mobility",
+  "EdTech",
+  "Energy & Utilities",
+];
+
+const techStack = [
+  "Python",
+  "TypeScript",
+  "React",
+  "Node.js",
+  "Go",
+  "PyTorch",
+  "LangChain",
+  "Kubernetes",
+  "Terraform",
+  "AWS",
+  "Azure",
+  "GCP",
+  "PostgreSQL",
+  "Snowflake",
+  "Kafka",
+  "Databricks",
+];
+
+const engagementModels = [
+  {
+    title: "Dedicated Product Team",
+    body: "A cross-functional squad — architect, engineers, designer, QA — embedded with your business for the long run.",
+    points: ["Monthly rolling contract", "Your tooling and rituals", "Scale up or down each quarter"],
+  },
+  {
+    title: "Fixed-Scope Delivery",
+    body: "A defined outcome, a defined budget and a defined date. Ideal for MVPs, migrations and modernisation.",
+    points: ["Milestone-based billing", "Signed-off scope document", "Warranty period included"],
+  },
+  {
+    title: "Managed Services & Support",
+    body: "24/7 operations, SRE cover and continuous improvement for platforms already running in production.",
+    points: ["SLA-backed response", "Proactive cost optimisation", "Quarterly roadmap reviews"],
+  },
+];
+
+const faqs = [
+  {
+    q: "How quickly can a team start?",
+    a: "For most engagements we mobilise a discovery lead within a week and a full squad within two to three weeks, depending on the specialisations required.",
+  },
+  {
+    q: "Do you work with startups as well as enterprises?",
+    a: "Yes. We deliberately serve startups, SMEs and large enterprises — the engineering standard is identical, only the engagement model and cadence change.",
+  },
+  {
+    q: "Who owns the intellectual property?",
+    a: "You do, completely. All source code, infrastructure definitions and documentation are transferred to your accounts as they are written.",
+  },
+  {
+    q: "How do you approach AI safety and data privacy?",
+    a: "Data residency, PII redaction, evaluation harnesses and human-in-the-loop review are part of every AI programme, alongside DPDP and GDPR alignment.",
+  },
+  {
+    q: "Can you work with our existing in-house team?",
+    a: "Frequently. We integrate into your sprint rituals, review your pull requests and hand over knowledge continuously so your team grows with the platform.",
+  },
+];
+
+function FaqItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <GlassCard hover={false} className="overflow-hidden">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+      >
+        <span className="text-base font-semibold">{q}</span>
+        <span className="grid size-8 shrink-0 place-items-center rounded-full border border-glass-border bg-glass text-primary">
+          {open ? <Minus className="size-4" /> : <Plus className="size-4" />}
+        </span>
+      </button>
+      {open && <p className="px-6 pb-6 text-sm leading-relaxed text-muted-foreground">{a}</p>}
+    </GlassCard>
+  );
+}
+
 function Home() {
   const [industry, setIndustry] = useState(industries[0].key);
   const [scale, setScale] = useState(scales[1].key);
