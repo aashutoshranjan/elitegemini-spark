@@ -629,6 +629,76 @@ function Home() {
       </Section>
 
       <Section>
+        <SectionHeading
+          eyebrow="How We Work"
+          title={
+            <>
+              From concept to <span className="text-gradient">deployment</span>
+            </>
+          }
+          subtitle="A four-stage delivery model refined across 150+ enterprise programmes."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {process.map((p) => (
+            <GlassCard key={p.step} className="relative p-7">
+              <span
+                className="text-4xl font-extrabold"
+                style={{ color: "color-mix(in oklab, var(--emerald) 85%, transparent)" }}
+              >
+                {p.step}
+              </span>
+              <h3 className="mt-4 text-lg font-bold">{p.title}</h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
+            </GlassCard>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="Engagement Models"
+          title="Work with us the way that fits"
+          subtitle="Startup, SME or enterprise — the commercial model flexes, the engineering standard does not."
+        />
+        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          {engagementModels.map((m) => (
+            <GlassCard key={m.title} className="flex h-full flex-col p-8">
+              <h3 className="text-xl font-bold">{m.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.body}</p>
+              <ul className="mt-6 space-y-3 text-sm">
+                {m.points.map((pt) => (
+                  <li key={pt} className="flex items-start gap-2.5">
+                    <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                    <span className="text-muted-foreground">{pt}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to="/contact"
+                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+              >
+                Discuss this model <ArrowRight className="size-4" />
+              </Link>
+            </GlassCard>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading
+          eyebrow="FAQ"
+          title="Questions we hear before kick-off"
+          subtitle="Still unsure? Write to support@elitegemini.com and an architect will reply, not a sales team."
+        />
+        <div className="mx-auto mt-12 grid max-w-3xl gap-4">
+          {faqs.map((f) => (
+            <FaqItem key={f.q} q={f.q} a={f.a} />
+          ))}
+        </div>
+      </Section>
+
+
+      <Section>
         <SectionHeading eyebrow="Enterprise Trust" title="Teams that build with us" />
         <div className="glass mt-10 overflow-hidden rounded-3xl py-6">
           <div className="flex w-max animate-ticker gap-12 px-6">
