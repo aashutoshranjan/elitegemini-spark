@@ -26,13 +26,13 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Elitegemini Technologies | Enterprise AI & Cloud Agency in Bangalore" },
+      { title: "Elitegemini Innovations | AI & Software Company in Bangalore" },
       {
         name: "description",
         content:
-          "Architecting tomorrow's intelligence today. Custom AI, cloud-native engineering and enterprise software from Bangalore, India.",
+          "Elitegemini Innovations builds custom AI, cloud, data and enterprise software solutions for startups, SMEs and enterprises from Bangalore, India.",
       },
-      { property: "og:title", content: "Elitegemini Technologies | Enterprise AI & Cloud Agency" },
+      { property: "og:title", content: "Elitegemini Innovations | AI & Software Company" },
       {
         property: "og:description",
         content:
@@ -98,7 +98,7 @@ const clients = [
 const testimonials = [
   {
     quote:
-      "Elitegemini rebuilt our claims engine around an LLM pipeline. Processing time dropped from 4 days to 40 minutes.",
+      "Elitegemini Innovations rebuilt our claims engine around an LLM pipeline. Processing time dropped from 4 days to 40 minutes.",
     name: "Ananya Rao",
     role: "CTO, Medhya Health",
   },
@@ -477,7 +477,7 @@ function Home() {
 
       <Section>
         <SectionHeading
-          eyebrow="Why Elitegemini"
+          eyebrow="Why Elitegemini Innovations"
           title={
             <>
               Chosen for <span className="text-gradient">rigour</span>, retained for results

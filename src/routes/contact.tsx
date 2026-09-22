@@ -16,13 +16,13 @@ import { GlassCard, Section, Eyebrow, SectionHeading } from "../components/ui-ki
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Elitegemini Technologies | Bangalore HQ & Booking" },
+      { title: "Contact Elitegemini Innovations | Bangalore HQ" },
       {
         name: "description",
         content:
           "Talk to our Bangalore team on M.G. Road. Share your project brief, budget and timeline, or book a 45-minute architecture session.",
       },
-      { property: "og:title", content: "Contact Elitegemini Technologies — Bengaluru" },
+      { property: "og:title", content: "Contact Elitegemini Innovations — Bengaluru" },
       {
         property: "og:description",
         content:
@@ -254,7 +254,7 @@ function Contact() {
               </ul>
               <div className="mt-6 overflow-hidden rounded-2xl border border-glass-border">
                 <iframe
-                  title="Elitegemini Technologies Bangalore office map"
+                  title="Elitegemini Innovations Bangalore office map"
                   src="https://maps.google.com/maps?q=Mahatma%20Gandhi%20Road%2C%20Ashok%20Nagar%2C%20Bengaluru%20560001&z=15&output=embed"
                   className="h-56 w-full border-0"
                   loading="lazy"

@@ -78,16 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Elitegemini Technologies — AI & Cloud Engineering, Bangalore" },
+      { title: "Elitegemini Innovations — AI & Software Development, Bangalore" },
       {
         name: "description",
         content:
-          "Elitegemini Technologies is a Bangalore-based enterprise AI, cloud and software engineering agency.",
+          "Elitegemini Innovations is a Bangalore-based AI, custom software, cloud and digital transformation company serving startups, SMEs and enterprises.",
       },
-      { name: "author", content: "Elitegemini Technologies" },
+      { name: "author", content: "Elitegemini Innovations" },
+      { name: "application-name", content: "Elitegemini Innovations" },
       { name: "robots", content: "index, follow" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Elitegemini Technologies" },
+      { property: "og:site_name", content: "Elitegemini Innovations" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -99,7 +100,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "shortcut icon", href: "/favicon.svg", type: "image/svg+xml" },
     ],
     scripts: [
       {
@@ -107,8 +109,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Elitegemini Technologies",
-          alternateName: "Elite Gemini",
+          name: "Elitegemini Innovations",
+          alternateName: "Elitegemini",
           url: "https://elitegemini-spark.lovable.app",
           email: "support@elitegemini.com",
           foundingDate: "2017",
@@ -124,6 +126,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             addressCountry: "IN",
           },
           sameAs: ["https://www.linkedin.com/company/elite-gemini/"],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Elitegemini Innovations",
+          alternateName: "Elitegemini",
+          url: "https://elitegemini-spark.lovable.app",
         }),
       },
     ],
