@@ -17,13 +17,13 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services | AI, Cloud, Product & Security Engineering — Elitegemini" },
+      { title: "AI, Cloud & Software Services | Elitegemini Innovations" },
       {
         name: "description",
         content:
-          "Custom AI and generative AI, cloud transformation and DevOps, web and mobile platform engineering, and enterprise modernization and security.",
+          "Explore AI, machine learning, custom software, cloud, DevOps, web, mobile, data and cybersecurity services from Elitegemini Innovations.",
       },
-      { property: "og:title", content: "Elitegemini Services — AI, Cloud, Product, Security" },
+      { property: "og:title", content: "Elitegemini Innovations Services — AI, Cloud & Software" },
       {
         property: "og:description",
         content:

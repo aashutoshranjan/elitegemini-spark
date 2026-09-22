@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Gem, Globe, Linkedin, MapPin, Mail, Send } from "lucide-react";
+import { Gem, Globe, MapPin, Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { useTheme } from "./theme";
@@ -20,24 +20,12 @@ export function Footer() {
               >
                 <Gem className="size-5 text-primary-foreground" />
               </span>
-              <span className="font-display text-lg font-extrabold">Elitegemini</span>
+              <span className="font-display text-lg font-extrabold">Elitegemini Innovations</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Bangalore-born engineering studio building enterprise AI, cloud and product platforms
               for global teams.
             </p>
-            <div className="mt-5">
-              <a
-                href="https://www.linkedin.com/company/elite-gemini/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Elitegemini Technologies on LinkedIn"
-                className="inline-flex items-center gap-3 rounded-2xl border border-glass-border bg-glass px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:text-primary"
-              >
-                <Linkedin className="size-7 text-primary" />
-                Follow us on LinkedIn
-              </a>
-            </div>
           </div>
 
           <div>
@@ -96,7 +84,7 @@ export function Footer() {
                 e.preventDefault();
                 if (!email.includes("@")) return toast.error("Enter a valid email address");
                 setEmail("");
-                toast.success("You're subscribed to the Elitegemini briefing.");
+                toast.success("You're subscribed to the Elitegemini Innovations briefing.");
               }}
             >
               <input
@@ -122,7 +110,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-2 border-t border-glass-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Elitegemini Technologies Pvt. Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Elitegemini Innovations Pvt. Ltd. All rights reserved.</p>
           <p>Bengaluru · Karnataka · India</p>
         </div>
       </div>

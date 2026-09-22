@@ -6,13 +6,13 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/case-studies")({
   head: () => ({
     meta: [
-      { title: "Case Studies | Enterprise AI & Cloud Results — Elitegemini" },
+      { title: "AI & Cloud Case Studies | Elitegemini Innovations" },
       {
         name: "description",
         content:
           "FinTech, healthcare, AI/SaaS and e-commerce transformations with measurable outcomes: +300% efficiency, 45ms latency, 38% cloud savings.",
       },
-      { property: "og:title", content: "Elitegemini Case Studies & Portfolio" },
+      { property: "og:title", content: "Elitegemini Innovations Case Studies & Portfolio" },
       {
         property: "og:description",
         content:
