@@ -16,23 +16,23 @@ import { GlassCard, Section, Eyebrow, SectionHeading } from "../components/ui-ki
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Elitegemini Innovations | Bangalore HQ" },
+      { title: "Contact Omegaflow Solutions | Bangalore HQ" },
       {
         name: "description",
         content:
           "Talk to our Bangalore team on M.G. Road. Share your project brief, budget and timeline, or book a 45-minute architecture session.",
       },
-      { property: "og:title", content: "Contact Elitegemini Innovations — Bengaluru" },
+      { property: "og:title", content: "Contact Omegaflow Solutions — Bengaluru" },
       {
         property: "og:description",
         content:
           "K39/7, Mahatma Gandhi Rd, Ashok Nagar, Bengaluru 560001. Enquiries answered within one business day.",
       },
-      { property: "og:url", content: "https://elitegemini-spark.lovable.app/contact" },
+      { property: "og:url", content: "https://omegaflow.in/contact" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app/contact" }],
+    links: [{ rel: "canonical", href: "https://omegaflow.in/contact" }],
   }),
   component: Contact,
 });
@@ -246,7 +246,7 @@ function Contact() {
                   <Phone className="size-4 shrink-0 text-primary" /> +91 80 4718 2200
                 </li>
                 <li className="flex gap-3">
-                  <Mail className="size-4 shrink-0 text-primary" /> support@elitegemini.com
+                  <Mail className="size-4 shrink-0 text-primary" /> support@omegaflow.in
                 </li>
                 <li className="flex gap-3">
                   <Clock className="size-4 shrink-0 text-primary" /> Mon–Fri, 09:30–19:00 IST
@@ -254,7 +254,7 @@ function Contact() {
               </ul>
               <div className="mt-6 overflow-hidden rounded-2xl border border-glass-border">
                 <iframe
-                  title="Elitegemini Innovations Bangalore office map"
+                  title="Omegaflow Solutions Bangalore office map"
                   src="https://maps.google.com/maps?q=Mahatma%20Gandhi%20Road%2C%20Ashok%20Nagar%2C%20Bengaluru%20560001&z=15&output=embed"
                   className="h-56 w-full border-0"
                   loading="lazy"
