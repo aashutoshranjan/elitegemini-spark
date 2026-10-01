@@ -311,8 +311,8 @@ function Home() {
   const [maturity, setMaturity] = useState(50);
 
   const result = useMemo(() => {
-    const ind = industries.find((i) => i.key === industry)!;
-    const sc = scales.find((s) => s.key === scale)!;
+    const ind = industries.find((i) => i.key === industry) ?? industries[0];
+    const sc = scales.find((s) => s.key === scale) ?? scales[0];
     const efficiency = Math.min(72, sc.base * ind.multiplier * (1 + (100 - maturity) / 180));
     const savings = efficiency * (sc.base > 30 ? 0.42 : sc.base > 20 ? 0.16 : 0.05);
     return {

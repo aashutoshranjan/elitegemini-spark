@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { Gem, Globe, MapPin, Mail, Send } from "lucide-react";
+import { Globe, MapPin, Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import omegaflowLogo from "../assets/omegaflow-logo.png.asset.json";
 import { useTheme } from "./theme";
 
 export function Footer() {
@@ -13,15 +14,11 @@ export function Footer() {
       <div className="glass mx-auto max-w-7xl rounded-3xl p-8 sm:p-12">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2.5">
-              <span
-                className="grid size-9 place-items-center rounded-xl"
-                style={{ background: "var(--gradient-brand)" }}
-              >
-                <Gem className="size-5 text-primary-foreground" />
-              </span>
-              <span className="font-display text-lg font-extrabold">Omegaflow Solutions</span>
-            </div>
+            <img
+              src={omegaflowLogo.url}
+              alt="Omegaflow Solutions"
+              className="h-12 w-auto object-contain"
+            />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Bangalore-born engineering studio building enterprise AI, cloud and product platforms
               for global teams.
