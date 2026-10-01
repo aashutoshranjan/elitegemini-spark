@@ -17,23 +17,23 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "AI, Cloud & Software Services | Elitegemini Innovations" },
+      { title: "AI, Cloud & Software Services | Omegaflow Solutions" },
       {
         name: "description",
         content:
-          "Explore AI, machine learning, custom software, cloud, DevOps, web, mobile, data and cybersecurity services from Elitegemini Innovations.",
+          "Explore AI, machine learning, custom software, cloud, DevOps, web, mobile, data and cybersecurity services from Omegaflow Solutions.",
       },
-      { property: "og:title", content: "Elitegemini Innovations Services — AI, Cloud & Software" },
+      { property: "og:title", content: "Omegaflow Solutions Services — AI, Cloud & Software" },
       {
         property: "og:description",
         content:
           "Explore our four service lines, technology stack and the four-step Discover → Architect → Execute → Scale engagement model.",
       },
-      { property: "og:url", content: "https://elitegemini-spark.lovable.app/services" },
+      { property: "og:url", content: "https://omegaflow.in/services" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app/services" }],
+    links: [{ rel: "canonical", href: "https://omegaflow.in/services" }],
   }),
   component: Services,
 });

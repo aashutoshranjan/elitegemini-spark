@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Gem, Menu, Moon, Sun, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
+import omegaflowLogo from "../assets/omegaflow-logo.png.asset.json";
 import { useTheme } from "./theme";
 
 const nav = [
@@ -18,16 +19,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 px-3 pt-3 sm:px-6">
       <div className="glass mx-auto flex max-w-7xl items-center gap-4 rounded-2xl px-4 py-3 sm:px-6">
-        <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span
-            className="grid size-9 place-items-center rounded-xl"
-            style={{ background: "var(--gradient-brand)", boxShadow: "var(--glow-primary)" }}
-          >
-            <Gem className="size-5 text-primary-foreground" strokeWidth={2.2} />
-          </span>
-          <span className="font-display text-base font-extrabold tracking-tight sm:text-lg">
-            Elitegemini <span className="text-gradient">Innovations</span>
-          </span>
+        <Link to="/" className="flex shrink-0 items-center" onClick={() => setOpen(false)}>
+          <img
+            src={omegaflowLogo.url}
+            alt="Omegaflow Solutions"
+            className="h-9 w-auto object-contain sm:h-10"
+          />
         </Link>
 
         <nav className="ml-auto hidden items-center gap-1 lg:flex">

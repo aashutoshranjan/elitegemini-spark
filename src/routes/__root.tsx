@@ -78,17 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Elitegemini Innovations — AI & Software Development, Bangalore" },
+      { title: "Omegaflow Solutions — AI & Software Development, Bangalore" },
       {
         name: "description",
         content:
-          "Elitegemini Innovations is a Bangalore-based AI, custom software, cloud and digital transformation company serving startups, SMEs and enterprises.",
+          "Omegaflow Solutions is a Bangalore-based AI, custom software, cloud and digital transformation company serving startups, SMEs and enterprises.",
       },
-      { name: "author", content: "Elitegemini Innovations" },
-      { name: "application-name", content: "Elitegemini Innovations" },
+      { name: "author", content: "Omegaflow Solutions" },
+      { name: "application-name", content: "Omegaflow Solutions" },
       { name: "robots", content: "index, follow" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Elitegemini Innovations" },
+      { property: "og:site_name", content: "Omegaflow Solutions" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -100,8 +100,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap",
       },
-      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
-      { rel: "shortcut icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "shortcut icon", href: "/favicon.png", type: "image/png" },
     ],
     scripts: [
       {
@@ -109,10 +109,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Elitegemini Innovations",
-          alternateName: "Elitegemini",
-          url: "https://elitegemini-spark.lovable.app",
-          email: "support@elitegemini.com",
+          name: "Omegaflow Solutions",
+          alternateName: "Omegaflow",
+          url: "https://omegaflow.in",
+          email: "support@omegaflow.in",
           foundingDate: "2017",
           description:
             "Bangalore-based IT services and consulting company specialising in Artificial Intelligence, custom software development, cloud solutions, data analytics, cybersecurity, web and mobile apps, enterprise automation and IT consulting.",
@@ -125,7 +125,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             postalCode: "560001",
             addressCountry: "IN",
           },
-          sameAs: ["https://www.linkedin.com/company/elite-gemini/"],
         }),
       },
       {
@@ -133,9 +132,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Elitegemini Innovations",
-          alternateName: "Elitegemini",
-          url: "https://elitegemini-spark.lovable.app",
+          name: "Omegaflow Solutions",
+          alternateName: "Omegaflow",
+          url: "https://omegaflow.in",
         }),
       },
     ],

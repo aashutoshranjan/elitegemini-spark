@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Use the supplied Omegaflow logo asset for visible branding and its symbol for the favicon, so all brand surfaces stay consistent.

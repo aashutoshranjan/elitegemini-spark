@@ -26,23 +26,23 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Elitegemini Innovations | AI & Software Company in Bangalore" },
+      { title: "Omegaflow Solutions | AI & Software Company in Bangalore" },
       {
         name: "description",
         content:
-          "Elitegemini Innovations builds custom AI, cloud, data and enterprise software solutions for startups, SMEs and enterprises from Bangalore, India.",
+          "Omegaflow Solutions builds custom AI, cloud, data and enterprise software solutions for startups, SMEs and enterprises from Bangalore, India.",
       },
-      { property: "og:title", content: "Elitegemini Innovations | AI & Software Company" },
+      { property: "og:title", content: "Omegaflow Solutions | AI & Software Company" },
       {
         property: "og:description",
         content:
           "Bangalore's premier custom AI, cloud and enterprise software innovation hub. 150+ enterprise apps delivered.",
       },
-      { property: "og:url", content: "https://elitegemini-spark.lovable.app" },
+      { property: "og:url", content: "https://omegaflow.in" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app" }],
+    links: [{ rel: "canonical", href: "https://omegaflow.in" }],
   }),
   component: Home,
 });
@@ -98,7 +98,7 @@ const clients = [
 const testimonials = [
   {
     quote:
-      "Elitegemini Innovations rebuilt our claims engine around an LLM pipeline. Processing time dropped from 4 days to 40 minutes.",
+      "Omegaflow Solutions rebuilt our claims engine around an LLM pipeline. Processing time dropped from 4 days to 40 minutes.",
     name: "Ananya Rao",
     role: "CTO, Medhya Health",
   },
@@ -311,8 +311,8 @@ function Home() {
   const [maturity, setMaturity] = useState(50);
 
   const result = useMemo(() => {
-    const ind = industries.find((i) => i.key === industry)!;
-    const sc = scales.find((s) => s.key === scale)!;
+    const ind = industries.find((i) => i.key === industry) ?? industries[0];
+    const sc = scales.find((s) => s.key === scale) ?? scales[0];
     const efficiency = Math.min(72, sc.base * ind.multiplier * (1 + (100 - maturity) / 180));
     const savings = efficiency * (sc.base > 30 ? 0.42 : sc.base > 20 ? 0.16 : 0.05);
     return {
@@ -477,7 +477,7 @@ function Home() {
 
       <Section>
         <SectionHeading
-          eyebrow="Why Elitegemini Innovations"
+          eyebrow="Why Omegaflow Solutions"
           title={
             <>
               Chosen for <span className="text-gradient">rigour</span>, retained for results
@@ -692,7 +692,7 @@ function Home() {
         <SectionHeading
           eyebrow="FAQ"
           title="Questions we hear before kick-off"
-          subtitle="Still unsure? Write to support@elitegemini.com and an architect will reply, not a sales team."
+          subtitle="Still unsure? Write to support@omegaflow.in and an architect will reply, not a sales team."
         />
         <div className="mx-auto mt-12 grid max-w-3xl gap-4">
           {faqs.map((f) => (

@@ -5,23 +5,23 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Elitegemini Innovations | Bangalore AI Company" },
+      { title: "About Omegaflow Solutions | Bangalore AI Company" },
       {
         name: "description",
         content:
-          "Discover the story, values and leadership behind Elitegemini Innovations, a Bangalore-based AI and software development company.",
+          "Discover the story, values and leadership behind Omegaflow Solutions, a Bangalore-based AI and software development company.",
       },
-      { property: "og:title", content: "About Elitegemini Innovations" },
+      { property: "og:title", content: "About Omegaflow Solutions" },
       {
         property: "og:description",
         content:
           "Our vision, core pillars, executive leadership and the Bangalore Innovation Lab powering enterprise AI delivery.",
       },
-      { property: "og:url", content: "https://elitegemini-spark.lovable.app/about" },
+      { property: "og:url", content: "https://omegaflow.in/about" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app/about" }],
+    links: [{ rel: "canonical", href: "https://omegaflow.in/about" }],
   }),
   component: About,
 });
@@ -69,7 +69,7 @@ function About() {
               Built in the <span className="text-gradient">Silicon Valley of India</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Elitegemini Innovations began in 2017 with four engineers in an Ashok Nagar walk-up and
+              Omegaflow Solutions began in 2017 with four engineers in an Ashok Nagar walk-up and
               a stubborn belief: enterprise software should feel like consumer software and reason
               like a domain expert.
             </p>

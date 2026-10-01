@@ -6,7 +6,7 @@
 - Keep the existing services, Bangalore address, page structure, and visual styling.
 
 ## Brand assets
-- Prepare the uploaded Omegaflow artwork for website use.
+- Use the uploaded Omegaflow artwork for website use.
 - Show the Omegaflow logo in both the header and footer with accessible labels.
 - Create a compact favicon from the logo symbol and remove stale favicon references.
 

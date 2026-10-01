@@ -6,23 +6,23 @@ import { GlassCard, Section, SectionHeading, Eyebrow } from "../components/ui-ki
 export const Route = createFileRoute("/case-studies")({
   head: () => ({
     meta: [
-      { title: "AI & Cloud Case Studies | Elitegemini Innovations" },
+      { title: "AI & Cloud Case Studies | Omegaflow Solutions" },
       {
         name: "description",
         content:
           "FinTech, healthcare, AI/SaaS and e-commerce transformations with measurable outcomes: +300% efficiency, 45ms latency, 38% cloud savings.",
       },
-      { property: "og:title", content: "Elitegemini Innovations Case Studies & Portfolio" },
+      { property: "og:title", content: "Omegaflow Solutions Case Studies & Portfolio" },
       {
         property: "og:description",
         content:
           "Detailed problem statements, solution architectures and metrics from delivered enterprise programmes.",
       },
-      { property: "og:url", content: "https://elitegemini-spark.lovable.app/case-studies" },
+      { property: "og:url", content: "https://omegaflow.in/case-studies" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://elitegemini-spark.lovable.app/case-studies" }],
+    links: [{ rel: "canonical", href: "https://omegaflow.in/case-studies" }],
   }),
   component: CaseStudies,
 });
