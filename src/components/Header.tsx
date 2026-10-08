@@ -23,7 +23,7 @@ export function Header() {
           <img
             src={omegaflowLogo.url}
             alt="Omegaflow Solutions"
-            className="h-9 w-auto object-contain sm:h-10"
+            className="h-7 w-auto object-contain sm:h-8"
           />
         </Link>
 
