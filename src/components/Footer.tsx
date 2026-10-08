@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Globe, MapPin, Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-import omegaflowLogo from "../assets/omegaflow-logo.png.asset.json";
+const omegaflowLogo = { url: "/omegaflow-logo.png" };
 import { useTheme } from "./theme";
 
 export function Footer() {

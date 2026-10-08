@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
-import omegaflowLogo from "../assets/omegaflow-logo.png.asset.json";
+const omegaflowLogo = { url: "/omegaflow-logo.png" };
 import { useTheme } from "./theme";
 
 const nav = [
